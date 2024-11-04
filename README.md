@@ -45,3 +45,9 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Degrade
+```css
+background: -webkit-linear-gradient(135deg, #5a3bf9,#d8078a,#bd1af0);/* Chrome 10-25, Safari 5.1-6 */                          
+background: linear-gradient(135deg, #5a3bf9,#d8078a,#bd1af0);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+```
