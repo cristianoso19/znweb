@@ -1,5 +1,9 @@
 ---
+interface Props {
+  height: string;
+}
 
+const { height } = Astro.props;
 ---
 
 <span class="max-h-10">
@@ -8,8 +12,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     id="Capa_1"
     data-name="Capa 1"
-    width="908.8637"
-    height="42"
+    height={height}
     viewBox="0 0 908.8637 219.6759"
     ><defs
       ><style>
