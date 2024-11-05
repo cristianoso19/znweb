@@ -3,7 +3,7 @@
 ---
 
 <section
-  class="relative md:h-1/3 lg:h-2/5 flex flex-col items-center justify-center text-center text-white py-0 px-3 mt-20"
+  class="relative md:h-1/3 lg:h-[400px] flex flex-col items-center justify-center text-center text-white py-0 px-3 mt-20"
 >
   <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden lg:rounded-2xl">
     <video
@@ -14,7 +14,29 @@
       loop></video>
   </div>
   <div class="video-content space-y-2">
-    <h1 class="font-light text-6xl">full Hero Video</h1>
-    <h3 class="font-light text-3xl">with TailwindCSS</h3>
+    <h1 class="font-light text-6xl">Un nuevo concepto de Internet</h1>
+    <h3 class="font-light text-3xl">100% FIBRA ÓPTICA</h3>
   </div>
 </section>
+
+<style>
+    .video-docker video {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-docker::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.video-content {
+  z-index: 2;
+}
+</style>
