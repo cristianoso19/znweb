@@ -1,0 +1,12 @@
+---
+interface Props {
+  txt: string;
+}
+
+const { txt } = Astro.props;
+---
+
+<button
+  class="btn border-0 bg-gradient-to-tr from-primary via-secondary to-accent mt-5 text-white shadow-[4px_4px_10px_4px_rgba(0,_0,_0,_0.1)]"
+  >{txt}</button
+>

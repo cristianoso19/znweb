@@ -1,4 +1,5 @@
 ---
+import Buton from './Buton.astro';
 interface Props {
   velocity: string;
   price: string;
@@ -7,12 +8,12 @@ interface Props {
 const { velocity, price } = Astro.props;
 ---
 
-<article>
-  <div class="min-w-56 p-6 flex flex-col rounded-xl h-full bg-primary">
+<article class="card bg-primary min-w-56 lg:w-1/5">
+  <div class=" card-body  p-6 flex flex-col h-full">
     <p class="text-white text-xs uppercase font-semibold">
       Internet fibra óptica
     </p>
-    <h2 class="text-4xl font-extrabold text-secondary">
+    <h2 class="text-4xl lg:text-5xl font-extrabold text-accent">
       {velocity}
       <span class="uppercase text-sm text-white">mbps</span>
     </h2>
@@ -20,18 +21,27 @@ const { velocity, price } = Astro.props;
       class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-50 dark:via-neutral-400"
     />
     <div class="text-left">
-      <p class="text-white font-semibold mt-2">Wifi 6</p>
-      <p class="text-white font-semibold mt-2">Soporte técnico</p>
-      <p class="text-white font-semibold mt-2">Instalación GRATIS</p>
-      <p class="text-white font-semibold mt-2">Compresión 2:1</p>
+      <p class="text-white font-semibold mt-2">
+        <i class="bx bx-wifi"></i> Wifi 6
+      </p>
+      <p class="text-white font-semibold mt-2">
+        <i class="bx bx-hard-hat"></i> Soporte técnico
+      </p>
+      <p class="text-white font-semibold mt-2">
+<i class="bx bx-gift"></i>
+        Instalación GRATIS</p>
+      <p class="text-white font-semibold mt-2">
+        
+        <i class="bx bx-sort-alt-2"></i>
+        Compresión 2:1</p>
     </div>
     <hr
       class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-50 dark:via-neutral-400"
     />
-    <p class="text-3xl font-extrabold text-secondary">
+    <p class="text-3xl font-extrabold text-accent">
       ${price}
       <span class="uppercase text-sm text-white font-semibold">/MES</span>
     </p>
-    <button class="btn btn-secondary mt-5">Contratar </button>
+    <Buton txt="Contratar"/>
   </div>
 </article>
