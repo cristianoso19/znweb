@@ -7,31 +7,30 @@ interface Props {
 
 const { velocity, price } = Astro.props;
 ---
-
-<article class="card bg-primary min-w-56 lg:w-1/5 shadow-xl">
-  <div class="card-body p-6 flex flex-col h-full">
-    <p class="text-white text-xs uppercase font-semibold">
+<article class="overflow-hidden min-w-56 lg:w-1/5 rounded-lg shadow transition hover:shadow-lg">
+  <div class="card-body bg-white p-4 sm:p-6 h-full">
+    <p class="text-xs uppercase font-semibold">
       Internet fibra óptica
     </p>
-    <h2 class="text-4xl lg:text-5xl font-extrabold text-accent">
+    <h2 class="text-4xl lg:text-5xl font-bold text-primary">
       {velocity}
-      <span class="uppercase text-sm text-white">mbps</span>
+      <span class="uppercase -ml-3 text-sm">mbps</span>
     </h2>
     <hr
       class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-50 dark:via-neutral-400"
     />
-    <div class="text-left">
-      <p class="text-white font-semibold mt-2">
+    <div class="text-left font-normal ml-8">
+      <p class=" mt-2">
         <i class="bx bx-wifi"></i> Wifi 6
       </p>
-      <p class="text-white font-semibold mt-2">
+      <p class=" mt-2">
         <i class="bx bx-hard-hat"></i> Soporte técnico
       </p>
-      <p class="text-white font-semibold mt-2">
+      <p class=" mt-2">
         <i class="bx bx-gift"></i>
         Instalación GRATIS
       </p>
-      <p class="text-white font-semibold mt-2">
+      <p class="mt-2">
         <i class="bx bx-sort-alt-2"></i>
         Compresión 2:1
       </p>
@@ -39,9 +38,9 @@ const { velocity, price } = Astro.props;
     <hr
       class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-50 dark:via-neutral-400"
     />
-    <p class="text-3xl font-extrabold text-accent">
+    <p class="text-3xl font-extrabold text-primary">
       ${price}
-      <span class="uppercase text-sm text-white font-semibold">/MES</span>
+      <span class="uppercase text-sm font-semibold">/MES</span>
     </p>
     <Buton txt="Contratar" />
   </div>
