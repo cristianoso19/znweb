@@ -12,14 +12,14 @@ const { velocity, price } = Astro.props;
     <p class="text-xs uppercase font-semibold">
       Internet fibra óptica
     </p>
-    <h2 class="text-4xl lg:text-5xl font-bold text-primary">
+    <h2 class="text-4xl lg:text-6xl font-bold text-primary">
       {velocity}
       <span class="uppercase -ml-3 text-sm">mbps</span>
     </h2>
     <hr
       class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-50 dark:via-neutral-400"
     />
-    <div class="text-left font-normal ml-8">
+    <div class="text-left ml-6 font-sm">
       <p class=" mt-2">
         <i class="bx bx-wifi"></i> Wifi 6
       </p>
@@ -38,9 +38,9 @@ const { velocity, price } = Astro.props;
     <hr
       class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-50 dark:via-neutral-400"
     />
-    <p class="text-3xl font-extrabold text-primary">
+    <p class="text-4xl font-bold text-primary">
       ${price}
-      <span class="uppercase text-sm font-semibold">/MES</span>
+      <span class="uppercase text-sm lg:text-lg font-semibold">/MES</span>
     </p>
     <Buton txt="Contratar" />
   </div>

@@ -2,7 +2,12 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "opensans": ['Open Sans', 'sans-serif'],
+        "inter": ['Inter', 'sans-serif'],
+      }
+    },
   },
   daisyui: {
     themes: [
@@ -17,6 +22,7 @@ export default {
           neutral: "#040404",
 
           "base-100": "#f6fefa",
+          "base-content": "#14245c",
 
           info: "#05a9ff",
 
