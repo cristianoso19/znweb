@@ -6,7 +6,32 @@ interface Props {
 const { txt } = Astro.props;
 ---
 
-<button
-  class="btn border-0 bg-fuchsia-600 hover:bg-accent mt-5 text-white shadow-lg shadow-fuchsia-500/40"
-  >{txt}</button
->
+<button class="mt-10 shadow__btn">
+  {txt}
+</button>
+
+<style>
+  .shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.shadow__btn {
+  background: #5a3bf9;
+  box-shadow: 0 0 10px #5a3bf9 ;
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px #5a3bf9,
+              0 0 15px #5a3bf9,
+              0 0 20px #5a3bf9,
+              0 0 25px #5a3bf9;
+}
+</style>
