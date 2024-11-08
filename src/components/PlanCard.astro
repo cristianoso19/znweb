@@ -7,7 +7,7 @@ interface Props {
 
 const { velocity, price } = Astro.props;
 ---
-<article class="overflow-hidden min-w-56 lg:w-1/5 rounded-lg shadow transition hover:shadow-lg">
+<article class="overflow-hidden min-w-56 lg:w-1/5 rounded-lg shadow transition hover:shadow-lg tracking-tight">
   <div class="card-body bg-white p-4 sm:p-6 h-full">
     <p class="text-xs uppercase font-semibold">
       Internet fibra óptica
@@ -38,9 +38,12 @@ const { velocity, price } = Astro.props;
     <hr
       class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-50 dark:via-neutral-400"
     />
-    <p class="text-4xl font-bold text-primary">
+    <p class="text-5xl font-bold text-primary">
       ${price}
-      <span class="uppercase text-sm lg:text-lg font-semibold">/MES</span>
+      <span class="uppercase text-sm -ml-3 lg:text-lg font-semibold">/MES</span>
+    </p>
+    <p class="text-base font-light">
+      Impuestos INCLUIDOS
     </p>
     <Buton txt="Contratar" />
   </div>
