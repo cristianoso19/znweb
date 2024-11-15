@@ -1,0 +1,55 @@
+---
+import Buton from "./Buton.astro";
+interface Props {
+  img: string;
+}
+
+const { img} = Astro.props;
+---
+<article class="overflow-hidden min-w-56 lg:w-1/5 rounded-lg shadow transition hover:shadow-lg tracking-tight">
+  <div class="card-body p-4 sm:p-6 h-full">
+    <p class="text-xs uppercase font-semibold">
+      Internet fibra óptica
+    </p>
+    <h2 class="text-4xl lg:text-6xl font-bold text-primary">
+      <span class="uppercase -ml-3 text-sm">mbps</span>
+    </h2>
+    <hr
+      class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-50 dark:via-neutral-400"
+    />
+    <div class="text-left ml-6 font-sm">
+      <p class=" mt-2">
+        <i class="bx bx-wifi"></i> Wifi 6
+      </p>
+      <p class=" mt-2">
+        <i class="bx bx-hard-hat"></i> Soporte técnico
+      </p>
+      <p class=" mt-2">
+        <i class="bx bx-gift"></i>
+        Instalación GRATIS
+      </p>
+      <p class="mt-2">
+        <i class="bx bx-sort-alt-2"></i>
+        Compresión 2:1
+      </p>
+    </div>
+    <hr
+      class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-50 dark:via-neutral-400"
+    />
+    <p class="text-5xl font-bold text-primary">
+      <span class="uppercase text-sm -ml-3 lg:text-lg font-semibold">/MES</span>
+    </p>
+    <p class="text-base font-light">
+      Impuestos INCLUIDOS
+    </p>
+    <Buton txt="Contratar" />
+  </div>
+</article>
+
+<style>
+  article {
+    background-image: url(../../src/assets/home.webp);
+    background-size: cover;
+    background-position: center;
+  }
+</style>
