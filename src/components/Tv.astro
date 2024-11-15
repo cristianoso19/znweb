@@ -1,5 +1,5 @@
 ---
-
+import Buton from "./Buton.astro";
 ---
 
 <section class="my-4 text-center">
@@ -27,18 +27,23 @@
         </div>
       </section>
     </div>
-    <div
-      class="w-1/2 flex flex-col justify-center text-left prose lg:prose-xl "
-    >
-      <h2 class="text-xl font-bold">Disfruta de la mejor programación</h2>
-      <p class="text-lg">
-        Con Zoenet TV podrás disfrutar de la mejor programación en vivo y en HD
-      </p>
-      <p class="text-lg">
-        Además, podrás disfrutar de tus series y películas favoritas en
-        cualquier momento y lugar
-      </p>
-      <p class="text-lg">¡No esperes más y contrata Zoenet TV!</p>
+    <div class="w-1/2 flex flex-col justify-center text-left">
+      <div class="prose lg:prose-xl">
+        <h2 class="text-xl font-semibold">
+          Con +PlayTv disfruta de la mejor programación para tu hogar
+        </h2>
+        <p class="text-lg">
+          Con Zoenet TV podrás disfrutar de la mejor programación en vivo y en
+          alta definición
+        </p>
+        <p class="text-lg">
+          Además, podrás disfrutar de tus series y películas favoritas en
+          cualquier momento y lugar
+        </p>
+        <p class="text-lg">¡No esperes más y contrata +PlayTv!</p>
+      </div>
+
+      <Buton txt="Contratar ahora!" />
     </div>
   </div>
 </section>
